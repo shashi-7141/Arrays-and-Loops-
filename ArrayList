@@ -1,0 +1,60 @@
+import java.util.*;
+
+//Using generics
+public class arr_prog1 {
+    public static void main(String[] args) {
+        ArrayList list = new ArrayList();
+        list.add("hello");
+        list.add(10);
+        System.out.println(list);
+
+        String str = (String)list.get(0);
+        System.out.println(str);
+    }
+}
+
+//without using Generics
+class Arr_prog2{
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+
+        String str = list.get(0);
+        System.out.println(str);
+    }
+}
+
+class Arr_prog3{
+    public static void main(String[] args) {
+        ArrayList<String> Fruits = new ArrayList<>();
+        Fruits.add("Apple");
+        Fruits.add("Banana");
+        Fruits.add("Mango");
+
+        System.out.println("Fruit first :" + Fruits.get(0));
+        System.out.println("Fruit second :" + Fruits.get(1));
+        Fruits.set(1,"Orange");
+        System.out.println("Fruit third :" + Fruits.get(2));
+        Fruits.remove(2);
+        System.out.println(Fruits);
+    }
+}
+
+class Arr_prog4{
+    public static void main(String[] args) {
+        ArrayList<String> names = new ArrayList<>();
+        names.add("aniket");
+        names.add("sangram");
+        names.add("mahesh");
+        names.add("abhishekh");
+        names.add("Eshwar");
+
+        if(names.contains("mahesh")){
+            System.out.println("yes it is present ");
+        }else{
+            System.out.println("not present");
+        }
+        System.out.println("Total number of names are " + names.size());
+
+    }
+}
