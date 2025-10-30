@@ -1,4 +1,4 @@
-import java.util.Arrays; // Needed for the Arrays.toString() and Arrays.sort() methods
+import java.util.Arrays;
 
 /**
  * Demonstrates the fundamental concepts of arrays in Java, 
@@ -10,16 +10,16 @@ public class ArrayBasics {
         
         // --- 1. One-Dimensional Array Declaration and Initialization ---
         
-        // Declaration by specifying size (values default to 0 for int)
+        // Declaration by specifying size
         int[] emptyArr = new int[5];
         System.out.println("1D Array (Size 5, default values): " + Arrays.toString(emptyArr));
 
-        // Declaration by specifying initial values (initializer list)
+        // Declaration by specifying initial values
         int[] valuesArr = {3, 2, 1, 5, 4};
         System.out.println("1D Array (Initial values): " + Arrays.toString(valuesArr));
         
         // Accessing and modifying elements
-        valuesArr[2] = 100; // Change the third element (index 2)
+        valuesArr[2] = 100;
         System.out.println("1D Array (After modification): " + Arrays.toString(valuesArr));
         
         System.out.println("\n--- Array Utility Functions ---");
@@ -36,15 +36,14 @@ public class ArrayBasics {
             {40, 50, 60}
         };
 
-        // Accessing a specific element (Row 1, Column 2 -> value 60)
+        // Accessing a specific element (Row 1, Column 2)
         int value = matrixLiteral[1][2];
         System.out.println("2D Matrix (Element at [1][2]): " + value);
         
         // IMPORTANT: Printing a 2D array requires Arrays.deepToString()
         System.out.println("2D Matrix (Proper print): " + Arrays.deepToString(matrixLiteral));
         
-        // Declaration by specifying size (10 rows, 10 columns)
-        // All values default to 0
+        // Declaration by specifying size
         int[][] matrixWithSize = new int[2][2];
         System.out.println("2D Matrix (Size 2x2, default values): " + Arrays.deepToString(matrixWithSize));
     }
